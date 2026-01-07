@@ -13,6 +13,8 @@ import org.testng.Assert;
 
 /**
  * STEP DEFINITIONS
+ * Acts as the glue between Gherkin steps and Java code.
+ * Translates human-readable steps into executable actions.
  */
 public class EmailChangeSteps {
 

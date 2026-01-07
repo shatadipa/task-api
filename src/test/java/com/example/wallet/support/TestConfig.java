@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+/**
+ * Centralized configuration loader.
+ * Reads environment-level values for: Base URL and API paths
+ */
 public final class TestConfig {
     private static final Properties PROPS = new Properties();
 

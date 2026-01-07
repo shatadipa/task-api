@@ -4,6 +4,12 @@ import com.example.wallet.models.EmailChangeRequest;
 import com.example.wallet.models.EmailChangeResponse;
 import io.restassured.response.Response;
 
+/**
+ * Acts as a shared state holder for a single scenario.
+ * This stores Request object, Raw HTTP response and Parsed response model
+ *
+ * Cucumber steps run in separate methods so this allows data to be passed clearly between Given, When and Then
+ */
 public class ScenarioContext {
     private EmailChangeRequest request;
     private Response rawResponse;
